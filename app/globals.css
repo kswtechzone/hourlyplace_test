@@ -145,6 +145,77 @@ body {
   }
 }
 
+.subscribe-form {
+  margin-bottom: 2.5rem;
+}
+
+.subscribe-input-group {
+  display: flex;
+  gap: 0.5rem;
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+.subscribe-input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.05);
+  color: #e0e0e0;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.subscribe-input::placeholder {
+  color: #666;
+}
+
+.subscribe-input:focus {
+  border-color: #a78bfa;
+}
+
+.subscribe-input:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.subscribe-button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(to right, #a78bfa, #60a5fa);
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  white-space: nowrap;
+}
+
+.subscribe-button:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.subscribe-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.subscribe-message {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+}
+
+.subscribe-message.success {
+  color: #4ade80;
+}
+
+.subscribe-message.error {
+  color: #f87171;
+}
+
 @media (max-width: 480px) {
   .brand {
     font-size: 2.25rem;
@@ -156,6 +227,14 @@ body {
 
   .description {
     font-size: 0.9rem;
+  }
+
+  .subscribe-input-group {
+    flex-direction: column;
+  }
+
+  .subscribe-button {
+    width: 100%;
   }
 
   .social-link {

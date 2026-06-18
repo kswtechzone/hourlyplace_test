@@ -1,3 +1,5 @@
+import SubscribeForm from "@/components/SubscribeForm";
+
 export default function Home() {
   return (
     <div className="container">
@@ -10,6 +12,8 @@ export default function Home() {
         We&apos;re building something new. A platform designed to connect people
         with opportunities — one hour at a time. Stay tuned for the launch.
       </p>
+
+      <SubscribeForm />
 
       <div className="social-links">
         <a
